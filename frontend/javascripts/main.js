@@ -8,7 +8,7 @@ var showButton = document.getElementById("getAllFood");
 showButton.onclick = getFood;
 
 function getFood(){
-    $.get('/food',function(data){
+    $.get('http://localhost:8000/food',function(data){
         if(!data){
             console.log("No data received");
         }
